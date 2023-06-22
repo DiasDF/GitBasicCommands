@@ -16,8 +16,8 @@ Para inicializar um novo repositório
 Para Clonar um repositório
 
 ```js title="Git Clone"
- git clone ssh://git@simao.cbm.df.gov.br:2022/00578877139/documentacao.git
- git clone https://simao.cbm.df.gov.br/00578877139/documentacao.git
+ git clone ssh://git@linkCaminho:porta/usuario/nome-do-arquivo.git
+ git clone https://linkCaminho/usuario/nome-do-arquivo.git
 ```
 
 Verifica se alguma mudança foi feita no branch atual
@@ -98,12 +98,12 @@ Histórico Resumido de commits
 
 Nesse exemplo vc terá duas opções SSH e HTTPS (git)
 
-<img src="/static/img/tutorial/GitCloneSSHeHTTPS.png" alt="Imagem do Link SSH" />
+<img src="GitCloneSSHeHTTPS.png" alt="Imagem do Link SSH" />
 
 Copie o URL do repositório a ser clonado e (Na pasta raiz onde ficará o clone) execute no terminal como o comando git clone
 
 ```js title="Git Clone"
-git clone ssh://git@simao.cbm.df.gov.br:2022/00578877139/documentacao.git
+git clone ssh://git@linkCaminho:2020/usuario/nome-do-arquivo.git
 ```
 
 ## Visualizar e conferir o clone
@@ -141,7 +141,7 @@ Listando e comparando se existem NOVAS alterações a serem incluídas no Reposi
 git status
 ```
 
-<img src="/static/img/tutorial/Git-Status.png" alt="Imagem de Saída do Comando Git Status" />
+<img src="Git-Status.png" alt="Imagem de Saída do Comando Git Status" />
 
 Nesta imagem em vermelho são mostrados todos os arquivos e diretórios do Repositório GitLab (nuvem) Versus Repositório Local.
 São listados os arquivos do diretório LOCAL que sofreram alterações comparando-os com os arquivos do GITLAB.
@@ -162,7 +162,7 @@ Verifique todos os arquivos que serão carregados no repositório
 git status
 ```
 
-<img src="/static/img/tutorial/NewGitStatusAposGitAdd.png" alt="Nova Saída do Comando Git Status após o git add ." />
+<img src="NewGitStatusAposGitAdd.png" alt="Nova Saída do Comando Git Status após o git add ." />
 
 ## GIT COMMIT
 
@@ -170,10 +170,10 @@ Commit (Fazendo upload) das novas alterações para o Repositório: git commit -
 (-a all files, todos os tipos de arquivos, -m relatar em uma mensagem as alterações que foram feitas neste commit)
 
 ```js title="Git Commit"
-git commit -a -m "Atualizando os Repositórios GitLab e Infraestrutura de Sistemas do CBMDF"
+git commit -a -m "Atualizando os Repositórios GitLab e Infraestrutura de Sistemas."
 ```
 
-<img src="/static/img/tutorial/Git-Commit.png" />
+<img src="Git-Commit.png" />
 
 ## GIT PULL
 
@@ -201,10 +201,10 @@ Se você tem um diretório local que AINDA NÃO POSSUI uma extenção no GITLAB 
 OBS: UMA LINHA DE COMANDO POR VEZ
 
 MUDAR O ORIGIN??? NÃO SEI
-git remote set-url origin https://simao.cbm.df.gov.br/57841896115/documentacao.git
+git remote set-url origin https://linkCaminho/usuario/nome-do-arquivo.git
 
 ```js title="Git Remote Add Origin"
-git remote add origin https://simao.cbm.df.gov.br/00578877139/documentacao
+git remote add origin https://linkCaminho/usuario/nome-do-arquivo
 git branch -M master
 git push -u origin master
 ```
