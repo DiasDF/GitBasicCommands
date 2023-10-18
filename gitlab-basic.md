@@ -101,7 +101,12 @@ git init
 ```
 2) Poderá cria-lo no GitHub (Nuvem) e posteriormente usar o GIT CLONE HTTPS://
 
+<img src="GitCloneSSHeHTTPS.png" alt="Git Clone Comando." />
+
+
 3) Estando o Github e VsCode SINCONIZADOS, basta ir no ícone do Git e acessar a opção  "CRIAR DIRETÓRIO E ADD COM O GIT INIT"
+
+<img src="VsCodeGit&Github.png" alt="VsCode e Github sincronizados." />
 
 
 # Clonando o repositório
