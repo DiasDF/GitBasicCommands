@@ -92,6 +92,18 @@ Histórico Resumido de commits
  git log --oneline
 ```
 
+# Criando um repositório no DIRETÓRIO LOCAL
+## GIT INIT
+1) Cria um repositório no DIRETÓRIO LOCAL que posteriormente pode ser adicionado ao Github pelo comando GIT REMOTE ADD ORIGIN ....
+
+```js title="Git Init"
+git init
+```
+2) Poderá cria-lo no GitHub (Nuvem) e posteriormente usar o GIT CLONE HTTPS://
+
+3) Estando o Github e VsCode SINCONIZADOS, basta ir no ícone do Git e acessar a opção  "CRIAR DIRETÓRIO E ADD COM O GIT INIT"
+
+
 # Clonando o repositório
 
 ## Copiando o URL do repositório remoto
@@ -132,7 +144,6 @@ code .
 ```
 
 # ATUALIZAÇÕES DO REPOSITÓRIO
-
 ## Para atualizar o repositório GitLab com as alterações feitas no diretório local
 
 Listando e comparando se existem NOVAS alterações a serem incluídas no Repositório: $ git status.
@@ -200,10 +211,11 @@ A URL deve ser a do GitLab onde deverá ficar seu repositório
 Se você tem um diretório local que AINDA NÃO POSSUI uma extenção no GITLAB use os comandos abaixo.
 OBS: UMA LINHA DE COMANDO POR VEZ
 
-MUDAR O ORIGIN??? NÃO SEI
+MUDAR O ORIGIN??? OU ADICIONAR UMA ORIGEM
 git remote set-url origin https://linkCaminho/usuario/nome-do-arquivo.git
 
 ```js title="Git Remote Add Origin"
+git init
 git remote add origin https://linkCaminho/usuario/nome-do-arquivo
 git branch -M master
 git push -u origin master
