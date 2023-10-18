@@ -4,104 +4,105 @@ title: GitLab Comandos Básicos
 ---
 
 <!-- @format -->
-
-## Guia dos principais comandos de git
-
-Para inicializar um novo repositório
-
+---
+# Guia dos principais comandos de git
+### 
+### Para inicializar um novo repositório
+ 
 ```js title="Git Init"
  git init
 ```
-
-Para Clonar um repositório
-
+ 
+### Para Clonar um repositório
+ 
 ```js title="Git Clone"
  git clone ssh://git@linkCaminho:porta/usuario/nome-do-arquivo.git
  git clone https://linkCaminho/usuario/nome-do-arquivo.git
 ```
-
-Verifica se alguma mudança foi feita no branch atual
-
+  
+### Verifica se alguma mudança foi feita no branch atual
+ 
 ```js title="Git Status"
  git status
 ```
-
-Adiciona arquivos ao versionamento
-
+ 
+### Adiciona arquivos ao versionamento
+ 
 ```js title="Git Add"
  git add <arquivo>
 ```
-
-Salva as alterações de código
+ 
+### Salva as alterações de código
 
 ```js title="Git Commit"
- git commit
+ git commit -m "Coments"
 ```
 
-Volta o código a algum ponto específico
+### Volta o código a algum ponto específico
 
 ```js title="Git Reset"
  git reset
 ```
 
-Descarta mudanças em algum arquivo específico
+### Descarta mudanças em algum arquivo específico
 
 ```js title="Git Checkout"
  git checkout <arquivo>
 ```
 
-Listagem de branches
+### Listagem de branches
 
 ```js title="Git Branch"
  git branch
 ```
 
-Altera o branch
+### Altera o branch
 
 ```js title="Git Checkout"
  git checkout <branch>
 ```
 
-Recebe atualizações do repo remoto
+### Recebe atualizações do repo remoto
 
 ```js title="Git Pull"
  git pull
 ```
 
-Envia atualizações para o repo remoto
+### Envia atualizações para o repo remoto
 
 ```js title="Git Push"
  git push
 ```
 
-Recebe branches remotos que não estão mapeados
+### Recebe branches remotos que não estão mapeados
 
 ```js title="Git Fetch"
  git fetch
 ```
-
-Visualize o histórico de commits
+ 
+### Visualize o histórico de commits
 
 ```js title="Git Log"
  git log
 ```
 
-Histórico Resumido de commits
+### Histórico Resumido de commits
 
 ```js title="Git Log"
  git log --oneline
 ```
-
+---
 # Criando um repositório no DIRETÓRIO LOCAL
-## GIT INIT
+### GIT INIT
 1) Cria um repositório no DIRETÓRIO LOCAL que posteriormente pode ser adicionado ao Github pelo comando GIT REMOTE ADD ORIGIN ....
 
 ```js title="Git Init"
 git init
 ```
-2) Poderá cria-lo no GitHub (Nuvem) e posteriormente usar o GIT CLONE HTTPS://
+2) Poderá cria-lo no GitHub (Nuvem) e posteriormente usar o GIT CLONE HTTPS:// na RAIZ DIRETÓRIO LOCAL onde deseja que seja craido o repositório.
 
 <img src="GitCloneSSHeHTTPS.png" alt="Git Clone Comando." />
+
 
 
 3) Estando o Github e VsCode SINCONIZADOS, basta ir no ícone do Git e acessar a opção  "CRIAR DIRETÓRIO E ADD COM O GIT INIT"
@@ -109,9 +110,10 @@ git init
 <img src="VsCodeGit&Github.png" alt="VsCode e Github sincronizados." />
 
 
+
 # Clonando o repositório
 
-## Copiando o URL do repositório remoto
+### Copiando o URL do repositório remoto
 
 Nesse exemplo vc terá duas opções SSH e HTTPS (git)
 
@@ -123,7 +125,7 @@ Copie o URL do repositório a ser clonado e (Na pasta raiz onde ficará o clone)
 git clone ssh://git@linkCaminho:2020/usuario/nome-do-arquivo.git
 ```
 
-## Visualizar e conferir o clone
+### Visualizar e conferir o clone
 
 Vá até o novo diretório clonado: $ cd (nomeDoNovoRepositório);
 Liste os novos arquivos: $ ls
@@ -149,7 +151,7 @@ code .
 ```
 
 # ATUALIZAÇÕES DO REPOSITÓRIO
-## Para atualizar o repositório GitLab com as alterações feitas no diretório local
+### Para atualizar o repositório GitLab com as alterações feitas no diretório local
 
 Listando e comparando se existem NOVAS alterações a serem incluídas no Repositório: $ git status.
 
@@ -162,7 +164,7 @@ git status
 Nesta imagem em vermelho são mostrados todos os arquivos e diretórios do Repositório GitLab (nuvem) Versus Repositório Local.
 São listados os arquivos do diretório LOCAL que sofreram alterações comparando-os com os arquivos do GITLAB.
 
-## GIT ADD para Adicionar as alterações
+### GIT ADD para Adicionar as alterações
 
 Adicionando todas as novas atualizações ao Repositório GitLab: $ git add . (ponto) ou (nomeDoArquivo);
 
@@ -180,7 +182,7 @@ git status
 
 <img src="NewGitStatusAposGitAdd.png" alt="Nova Saída do Comando Git Status após o git add ." />
 
-## GIT COMMIT
+### GIT COMMIT
 
 Commit (Fazendo upload) das novas alterações para o Repositório: git commit -a -m "texto"
 (-a all files, todos os tipos de arquivos, -m relatar em uma mensagem as alterações que foram feitas neste commit)
@@ -191,7 +193,7 @@ git commit -a -m "Atualizando os Repositórios GitLab e Infraestrutura de Sistem
 
 <img src="Git-Commit.png" />
 
-## GIT PULL
+### GIT PULL
 
 Para ATUALIZAR imediatamente o repositório local e BAIXAR o conteúdo de um repositório remoto
 
@@ -216,7 +218,7 @@ A URL deve ser a do GitLab onde deverá ficar seu repositório
 Se você tem um diretório local que AINDA NÃO POSSUI uma extenção no GITLAB use os comandos abaixo.
 OBS: UMA LINHA DE COMANDO POR VEZ
 
-MUDAR O ORIGIN??? OU ADICIONAR UMA ORIGEM
+### MUDAR O ORIGIN??? OU ADICIONAR UMA ORIGEM
 git remote set-url origin https://linkCaminho/usuario/nome-do-arquivo.git
 
 ```js title="Git Remote Add Origin"
@@ -249,25 +251,25 @@ git branch
 
 Continua no vídeo youtube aos 13:50
 
-Você pode remover uma origem
+### Você pode remover uma origem
 
 ```js title="Remove Origin"
 git remote remove origin
 ```
 
-adicionar um novo com o novo endereço
+### Adicionar um novo Repositório Remoto e um novo endereço
 
 ```js title="Add Origin"
 git remote add origin git://suaUrl
 ```
 
-Alterar o diretório remoto
+### Alterar o diretório remoto
 
 ```js title="Set-URL"
 git remote set-url origin git://suaUrl
 ```
 
-Ou pode renomeá-lo o atual e adicionar um novo.
+### Renomear o atual
 
 ```js title="Rename Origin"
 git remote rename origin old-origin
