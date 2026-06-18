@@ -343,6 +343,13 @@ Instalar o comando "code ." no VSCode MACOS: No VSC digite “shift+command+p”
 
 "fn+F1 = shift+command+p" - configurações do VsCode
 
+"Shift+Windows+S" : (Win) Tira um print com Recorte da Tela para **ÁREA DE TRANSFERÊNCIA**. É nessessário colar em um app.
+"Shift+COMMAND+4" : (MAC) Tira um print com Recorte da Tela para **PASTA DEFINIDA**. É nessessário colar em um app.
+"Shift+COMMAND+5" : (MAC) MENU DE OPÇÕES DE CAPTURA DE TELA E DESTINO DO ARQUIVO
+
+"Command+Option+ESC" : (MAC) Encerrar uma aplicação.
+"CTRL+ALT+DEL": (WIN) Encerrar uma aplicação.
+
 
 ## Bibliografia
 
