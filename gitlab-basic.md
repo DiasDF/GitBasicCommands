@@ -6,10 +6,36 @@ title: GitLab Comandos Básicos
 <!-- @format -->
 ---
 # Guia dos principais comandos de git
+
+### Entendendo Resumidamente o Processo, Considerações
+
+Depois, o "git remote add origin" é o comando que vincula o seu repositório local a um repositório remoto, definindo a origem para onde você vai enviar suas mudanças.
+
+
+**EM RESUMO:** 
+A finalidade de criar repositórios:  
+Um **Repositório** é como se fosse um "armário digital" onde o projeto fica guardado, com todo o histórico de alterações. Nele é possível OBTER e principalmente OFERECER contribuições ao projeto com **segurança e controle** rigoroso das versões, das etapas de implementações e dos colaboradores individualmente.  
+Dessa forma o projeto evolui gradualmente em cada equipe de desenvolvimento de modo **coordenado** no servidor - por exemplo o github.  
+**Git** - É o sistema que roda no seu computador, permitindo que você rastreie, gerencie e versiona o código.  
+**Gitbub** - É um "Servidor Remoto" em núvem entre outros como Gitlab, Bitbucket para compartilhamento de projetos online. É possível também criar uma Rede Local com um servidor privado para o repositório master/central como nos serviços: Gitea, GitLab Community Edition, Gogs etc.  
+
+### "Algumas" Etapas do Processo:  
+**Criar os Repositórios:** Locais, nas máquinas locais (Git init) e Repositórios Remotos: Servidor núvem (Github), Servidor em Rede e máquinas locais de outros usuários.  
+**Git init** - É o comando de terminal que inicializa um "Repositório Local" para projetos em seu computador. Com o Git seu projeto local poderá iniciar do zero ou a partir de uma cópia ou parte de um projeto e principalmente total controle de alterações e versionamentos, que é o objetivo principal.  
+**Git Remote add origin** - É o comando que vincula o seu "Repositório Local" a um "Repositório Remoto".  
+**Git Fork** - cria uma cópia "independente" de um projeto ou parte dele do repositório de outro usuário que está no servidor (como o GitHub) para seu Repositório Remoto (Servidor). No fork você terá controle total dá cópia do projeto pois o original só será alterado com a permissão do proprietário. Isso permite que sejam feitas adaptações, testes, correções, inovações entre outras coisas em um projeto sem danificar o orginal.  
+Posteriormente, Abre-se um **Pull Request** do seu fork para o repositório original contendo suas propostas de alterações ou revisões.  
+**Git Clone** - capta projetos Remotos para sua máquina local.  
+**Git Add** - Adiciona **Versões de Alterações** ao projeto local.  
+**Git Commit** - Descreve e lista o que foi alterado.  
+**Git push** - Envia suas alterações para o seu Diretório Remoto.  
+**Git pull** - Recebe todas as atualizações para seu projeto.  
+**Git Merge** - Agrega as alterações dos usuários ao Projeto Principal que posteriormente receberá o estatus de Projeto em Produção (Termo Técnico para utilização pelo usuário final), Projeto em Desenvolvimento (É o projeto que ainda está passível de receber novas implementações, alterações, testes etc.).  
+
 ### 
 ### Para inicializar um novo repositório
  
-```js title="Git Init"
+```command title="Git Init"
  git init
 ```
  
@@ -19,7 +45,12 @@ title: GitLab Comandos Básicos
  git clone ssh://git@linkCaminho:porta/usuario/nome-do-arquivo.git
  git clone https://linkCaminho/usuario/nome-do-arquivo.git
 ```
-  
+
+### Git Fork
+Um fork cria uma cópia "independente" de um repositório de outro usuário dentro do próprio servidor (como o GitHub) para seu projeto ou novo projeto. O Clone capta projetos de uma máquina local. No fork você terá total controle do projeto pois é apenas uma cópia do original que só será alterado com a permissão do proprietário. Isso permite que sejam feitas adaptações, testes, correções, inovações entre outras coisas em um projeto sem danificar o orginal. 
+Posteriormente, Abre-se um Pull Request do seu fork para o repositório original contendo suas propostas de alterações.
+
+
 ### Verifica se alguma mudança foi feita no branch atual
  
 ```js title="Git Status"
@@ -105,7 +136,7 @@ git init
 
 
 
-3) Estando o Github e VsCode SINCONIZADOS, basta ir no ícone do Git e acessar a opção  "CRIAR DIRETÓRIO E ADD COM O GIT INIT"
+3) Estando o Github e VsCode SINCRONIZADOS, basta ir no ícone do Git e acessar a opção  "CRIAR DIRETÓRIO E ADD COM O GIT INIT"
 
 <img src="VsCodeGit&Github.png" alt="VsCode e Github sincronizados." />
 
