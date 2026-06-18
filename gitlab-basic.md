@@ -306,6 +306,44 @@ git remote set-url origin git://suaUrl
 git remote rename origin old-origin
 ```
 
+### Terminal MacOs / Windows:
+**OBS use o botão "command" no lugar de "ctrl"**
+
+"dir" ou "ls" - Listagem de arquivos.
+
+"Tab" - completa nomes de comandos.
+
+“ctrl+L” - Limpa a Tela do Terminal.
+
+"command+l" - Desfaz o último comando.
+
+"cd .." - Para sair da pasta.
+
+"cd ." - Para entrar na pasta.
+
+"mkdir" - Criar uma pasta.
+
+"echo" - Criar um arquivo dentro da pasta.
+
+Ex. C:\Users\gianc\Pasta_exemplo> echo "olá" > arquivo.txt
+
+"cat" - Para ver o conteúdo dentro do arquivo.
+
+"rm -r" - Para deletar tanto o arquivo quanto a pasta.
+
+CRIAR A PASTA GIT NA RAIZ HOME “cd ~ “ “mkdir gitpython”
+
+“pwd “ Ver o caminho completo do diretório atual ./Users/diasdf/gitpython.
+
+”shift+option+command+c ou v” : copia e cola conteúdos da tela do terminal macos.
+
+Instalar o comando "code ." no VSCode MACOS: No VSC digite “shift+command+p” + “install 'code’ command path”
+
+"Shift+Command+v" : Markdown preview Mostra com fica a saída do md.
+
+"fn+F1 = shift+command+p" - configurações do VsCode
+
+
 ## Bibliografia
 
 APRENDA GIT EM 30 MIN. - OS PRINCIPAIS COMANDOS DE GIT By Matheus Battisti - Hora de Codar
