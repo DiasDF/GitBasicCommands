@@ -33,6 +33,19 @@ Posteriormente, Abre-se um **Pull Request** do seu fork para o repositório orig
 **Git Merge** - Agrega as alterações dos usuários ao Projeto Principal que posteriormente receberá o estatus de Projeto em Produção (Termo Técnico para utilização pelo usuário final), Projeto em Desenvolvimento (É o projeto que ainda está passível de receber novas implementações, alterações, testes etc.).  
 
 ### 
+
+### Criar arquivos e Diretórios no Github
+
+Cria um diretório "vazio"  
+```
+AddFile/nomeDiretório/.gitkeep
+```
+
+Cria um diretório com o arquivo README.md
+```
+AddFile/nomeDiretório/README.md
+```
+
 ### Para inicializar um novo repositório
  
 ```command title="Git Init"
